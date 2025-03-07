@@ -1,0 +1,75 @@
+/* InfluencerList.css */
+.influencer-card {
+  background-color: #0a0f0d; /* Dark background for cyberpunk feel */
+  border: 2px solid #00ff7f; /* Neon green border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ff7f; /* Neon glow */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.influencer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ff7f; /* Increased glow on hover */
+}
+
+.image-container {
+  text-align: center;
+  padding: 10px;
+  background-color: #0d1a16; /* Darker shade for contrast */
+  border-bottom: 2px solid #00ff7f;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #00ff7f; /* Neon border around profile image */
+  box-shadow: 0 0 10px #00ff7f;
+}
+
+.influencer-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00ff7f; /* Neon green text */
+  text-shadow: 0 0 5px #00ff7f;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.influencer-bio {
+  font-size: 1rem;
+  color: #b0ffb0; /* Softer green for readability */
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.followers-count {
+  font-size: 1rem;
+  color: #80ffb0;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Cyberpunk Button for Follow */
+.follow-btn {
+  display: block;
+  background-color: transparent;
+  border: 2px solid #00ff7f;
+  color: #00ff7f;
+  font-size: 1rem;
+  padding: 8px 16px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #00ff7f;
+}
+
+.follow-btn:hover {
+  background-color: #00ff7f;
+  color: #0a0f0d;
+  box-shadow: 0 0 15px #00ff7f;
+}

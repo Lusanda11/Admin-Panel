@@ -1,0 +1,33 @@
+/* Home.css */
+.home-container {
+  background: url("../assets/cyber_punk.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #00ff7f;
+  text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 30px #007f5f;
+  font-family: "Orbitron", sans-serif; /* Cyberpunk font */
+}
+
+.glow-text {
+  color: #000000; /* Black text */
+  text-shadow: none; /* No glow effect */
+}
+
+.glow-button {
+  background-color: #00ff7f !important;
+  border: none;
+  box-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.glow-button:hover {
+  background-color: #007f5f !important;
+  box-shadow: 0 0 20px #00ff7f, 0 0 30px #00ff7f;
+  color: white;
+}

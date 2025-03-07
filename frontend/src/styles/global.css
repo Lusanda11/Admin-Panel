@@ -1,0 +1,124 @@
+/* 🌌 Cyberpunk Green Glow Theme for Health Claims Verifier */
+
+/* Import futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --primary-glow: #00ff99; /* Neon Green */
+  --bg-color: #0a0f0d; /* Dark background */
+  --text-color: #e0ffe0; /* Light greenish text */
+  --border-glow: rgba(0, 255, 153, 0.8);
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background: url("../assets/cyber_punk.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* 🟢 Glowing Effect */
+.glow {
+  text-shadow: 0 0 5px var(--primary-glow), 0 0 10px var(--primary-glow);
+}
+
+/* 🌟 Cyberpunk Button */
+.cyber-btn {
+  background: transparent;
+  border: 2px solid var(--primary-glow);
+  color: var(--primary-glow);
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 5px var(--primary-glow);
+}
+
+.cyber-btn:hover {
+  background: var(--primary-glow);
+  color: #0a0f0d;
+  box-shadow: 0 0 10px var(--primary-glow), 0 0 20px var(--primary-glow);
+}
+
+/* 🔳 Cyberpunk Card */
+.cyber-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--border-glow);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--border-glow);
+  transition: 0.3s;
+}
+
+.cyber-card:hover {
+  box-shadow: 0 0 15px var(--border-glow), 0 0 25px var(--border-glow);
+}
+
+/* ✏️ Input Fields */
+input[type="text"], input[type="email"], input[type="password"] {
+  background: transparent;
+  border: 2px solid var(--primary-glow);
+  color: var(--text-color);
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 0 5px var(--primary-glow);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  box-shadow: 0 0 10px var(--primary-glow), 0 0 20px var(--primary-glow);
+}
+
+/* 🌍 Neon Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 2px solid var(--primary-glow);
+  box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--primary-glow);
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+/* 🖥 Centered Content */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* ⚡ Animated Pulse Effect */
+@keyframes neonPulse {
+  0% {
+    text-shadow: 0 0 5px var(--primary-glow), 0 0 10px var(--primary-glow);
+  }
+  50% {
+    text-shadow: 0 0 10px var(--primary-glow), 0 0 20px var(--primary-glow);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--primary-glow), 0 0 10px var(--primary-glow);
+  }
+}
+
+.pulsing-text {
+  animation: neonPulse 1.5s infinite alternate;
+}
